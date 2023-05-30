@@ -2,16 +2,22 @@
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
 }
+body{
+    margin: 0px;
+}
 header{
+    z-index: 1;
     background-color: antiquewhite;
-    margin: 0, 0, 0, 0;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
     }
 
 header nav ul li{
     display: inline-flex;
     }
+    
 header nav ul li a{
     color: gray;
     text-align: justify;
@@ -20,13 +26,72 @@ header nav ul li a{
     margin: 1em;
 }
 
-.banner-inicial img {
-    width: 100%;
+.banner-inicial{
+    display: flex;
+    width:auto;
     height: 400px;
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
-}
-.banner-inicial h1{
+    background-image: url(./img_index/Praca-do-Maraco-Zero-Rosa-dos-Ventos-Abre.webp);
+    background-size: cover;
+    background-position: center;
     position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.banner-inicial-paço {
+    display: flex;
+    width:auto;
+    height: 400px;
+    background-image: url(./img_paco_alfandega/o-que-fazer-no-recife-antigo-6712.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.banner-inicial-museu{
+    display: flex;
+    width:auto;
+    height: 400px;
+    background-image: url(./img_museu/museu-paço-do-frevo-3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3em;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    text-transform: uppercase;
+}
+h2{
+    color: dimgray ;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    color: dimgray;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-justify: distribute-all-lines;
+}
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fotos img{
+    margin: 2px;
+    border-radius: 5%;
+}
+footer{
+    position: center ;
+    display: flex;
+    justify-content: center;
+}
+footer nav p{
+    font-style: italic;
+    font-size: small;
 }
